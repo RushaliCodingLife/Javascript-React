@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+// if all the elements are similar in one aspect. It returns boolean
+
+const names = ['Asabeneh', 56, 'Elias']
+const areAllStr = names.every((name) => typeof name === 'string') 
+
+console.log(areAllStr)
+
+
+const namesData = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+const areAllStrData = namesData.every((name) => typeof name === 'string') //check acc to string
+
+console.log(areAllStrData)
+
+const Array =[11,1,2,559,26]
+const arr = Array.every((name)=> typeof name === 'number')
+console.log(arr)
+
+
+  </script>
+</body>
+</html>

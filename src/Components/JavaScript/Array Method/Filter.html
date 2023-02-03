@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Filter out items which full fill filtering conditions and return a new array.
+
+      let age = [12, 50, 35, 21, 15, 19, 52];
+      let CheckData = age.filter(Adult);
+      function Adult(age) {
+        return age >= 18;
+      }
+
+      console.log(CheckData);
+
+      const countries = [
+        "Albania",
+        "Bolivia",
+        "Canada",
+        "Denmark",
+        "Ethiopia",
+        "Finland",
+        "Germany",
+        "Hungary",
+        "Ireland",
+        "Japan",
+        "Kenya",
+      ];
+
+      const countriesEndsByia = countries.filter((country) =>
+        country.endsWith("ia")
+      );
+      console.log(countriesEndsByia);
+
+      
+      let Array = ["John", "Tom", "Jerry", "Dom"];
+      let NewArray = Array.filter(Data);
+
+      function Data(Array) {
+        return Array.endsWith("om");
+
+        // return Array.length === 4;
+      }
+
+      console.log(NewArray);
+    </script>
+  </body>
+</html>
