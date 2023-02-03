@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+// To cut out a multiple items in range. It takes two parameters:starting and ending position. It doesn't include the ending position.
+
+const numbers = [1,2,3,4,5]
+
+console.log("Blank Slice"+ " " + numbers.slice()) // -> it copies all  item
+console.log("Index(0) Slice"+ " " +numbers.slice(0)) // -> it copies all  item
+console.log("Index(0) with Array length Slice"+ " " +numbers.slice(0, numbers.length)) // it copies all  item
+console.log("Index value (1,4) Slice"+ " " +numbers.slice(1,4)) // -> [2,3,4] // it doesn't include the ending position
+
+  </script>
+</body>
+</html>

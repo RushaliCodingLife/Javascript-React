@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    // Concatenating two arrays 
+
+    let FirstList = [1,2,3]
+    let SecondList = [4,5,6]
+    let ThirdList = FirstList.concat(SecondList)
+    console.log(ThirdList)
+
+
+
+    const fruits = ['banana', 'orange', 'mango', 'lemon']                 
+const vegetables = ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot'] 
+const fruitsAndVegetables = fruits.concat(vegetables)        
+console.log(fruitsAndVegetables)
+
+//  indexOf to check value exist in array or not if it exist then return index else return (-1)
+console.log(fruitsAndVegetables.indexOf("orange"))
+console.log(fruitsAndVegetables.indexOf("56")) // retun -1 because value does not exits in array     
+
+
+// condition
+
+const fruitsData = ['banana', 'orange', 'mango', 'lemon']
+let index = fruitsData.indexOf('banana')  // 0
+
+if(index === -1){
+   console.log('This fruit does not exist in the array')  
+} else {
+    console.log('This fruit does exist in the array')
+}
+
+  </script>
+</body>
+</html>
