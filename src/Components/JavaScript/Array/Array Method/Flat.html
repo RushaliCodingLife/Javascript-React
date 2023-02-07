@@ -9,13 +9,16 @@
 <body>
   <script>
 
-// To check data type of an array
-// It print true if data will be in array form else print false
-let Numbers = [10,11,12,13,14,15,16,17]
-console.log(Array.isArray(Numbers)) //return true
+const arr1 = [0, 1, 2, [3, 4]];;
 
-let Number = 100
-console.log(Array.isArray(Number)) //return false
+console.log(arr1.flat());
+// Expected output: Array [0, 1, 2, 3, 4]
+
+const arr2 = [0, 1, 2, [[[[3, 4]]]]];
+
+console.log(arr2.flat(2));
+// Expected output: Array [0, 1, 2, Array [3, 4]]
+
 
   </script>
 </body>

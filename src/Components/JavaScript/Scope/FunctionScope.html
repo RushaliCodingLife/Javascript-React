@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+//Variables defined inside a function are not accessible (visible) from outside the function.
+
+      //Var keyword:
+      function myFunction() {
+        var firstName1 = "Krishna";
+        console.log(firstName1);
+      }
+
+      myFunction();
+
+      //let keyword:
+      function myFunction() {
+        let firstName2 = "Krishna";
+        console.log(firstName2);
+      }
+      myFunction();
+
+      // const keyword:
+      function myFunction() {
+        const firstName3 = "Krishna";
+        console.log(firstName3);
+      }
+      myFunction();
+    </script>
+  </body>
+</html>

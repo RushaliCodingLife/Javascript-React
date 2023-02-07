@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Global Scope and Global variables can be accessed from anywhere in a program.
+      var x = "1";
+      const y = "2";
+      let z = "3";
+
+      console.log(x); // 1
+      console.log(y); // 2
+      console.log(z); // 3
+
+      function Number() {
+        console.log(x); // x is accessible here
+        console.log(y); // y is accessible here
+        console.log(z); // z is accessible here
+      }
+Number();
+      
+    </script>
+  </body>
+</html>
