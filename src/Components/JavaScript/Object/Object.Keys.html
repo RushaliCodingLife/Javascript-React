@@ -1,56 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        firstName: "Asabeneh",
+        age: 250,
+        country: "Finland",
+        city: "Helsinki",
+        skills: ["HTML", "CSS", "JS"],
+        title: "teacher",
+        address: {
+          street: "Heitamienkatu 16",
+          pobox: 2002,
+          city: "Helsinki",
+        },
+        getPersonInfo: function () {
+          return `I am ${this.firstName} and I live in ${this.city}, ${this.country}. I am ${this.age}.`;
+        },
+      };
+      console.log(person.getPersonInfo());
 
+      //Object methods: Object.assign, Object.keys, Object.values, Object.entries hasOwnProperty
 
-const person = {
-  firstName: 'Asabeneh',
-  age: 250,
-  country: 'Finland',
-  city:'Helsinki',
-  skills: ['HTML', 'CSS', 'JS'],
-  title: 'teacher',
-  address: {
-    street: 'Heitamienkatu 16',
-    pobox: 2002,
-    city: 'Helsinki'
-  },
-  getPersonInfo: function() {
-    return  `I am ${this.firstName} and I live in ${this.city}, ${this.country}. I am ${this.age}.`
-  }
-}
-console.log(person.getPersonInfo());
+      const copyPerson = Object.assign({}, person);
+      console.log(copyPerson);
 
-//Object methods: Object.assign, Object.keys, Object.values, Object.entries hasOwnProperty
+      const keys = Object.keys(copyPerson);
+      console.log(keys); //['firstName', 'age', 'country','city', 'skills','title', 'address', 'getPersonInfo']
+      const address = Object.keys(copyPerson.address);
+      console.log(address); //['street', 'pobox', 'city']
 
-const copyPerson = Object.assign({}, person)
-console.log(copyPerson)
+      //   Object.values
+      const values = Object.values(copyPerson);
+      console.log(values);
 
-const keys = Object.keys(copyPerson)
-console.log(keys) //['firstName', 'age', 'country','city', 'skills','title', 'address', 'getPersonInfo']
-const address = Object.keys(copyPerson.address)
-console.log(address) //['street', 'pobox', 'city']
+      // Object.entries
+      const entries = Object.entries(copyPerson);
+      console.log(entries);
 
-
-//   Object.values
-const values = Object.values(copyPerson)
-console.log(values)
-
-// Object.entries
-const entries = Object.entries(copyPerson)
-console.log(entries)
-
-// hasOwnProperty: To check if a specific key or property exist in an object
-console.log(copyPerson.hasOwnProperty('name'))
-console.log(copyPerson.hasOwnProperty('firstName'))
-
-  </script>
-</body>
+      // hasOwnProperty: To check if a specific key or property exist in an object
+      console.log(copyPerson.hasOwnProperty("name"));
+      console.log(copyPerson.hasOwnProperty("firstName"));
+    </script>
+  </body>
 </html>

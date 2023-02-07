@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        firstName: "Asabeneh",
+        lastName: "Yetayeh",
+        age: 250,
+        country: "Finland",
+        city: "Helsinki",
+        skills: [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Node",
+          "MongoDB",
+          "Python",
+          "D3.js",
+        ],
+        getFullName: function () {
+          return `${this.firstName} ${this.lastName}`;
+        },
+      };
+      person.nationality = "Ethiopian";
+      person.country = "Finland";
+      person.title = "teacher";
+      person.skills.push("Meteor");
+      person.skills.push("SasS");
+      person.isMarried = true;
 
-const person = {
-  firstName: 'Asabeneh',
-  lastName: 'Yetayeh',
-  age: 250,
-  country: 'Finland',
-  city: 'Helsinki',
-  skills: [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'Node',
-    'MongoDB',
-    'Python',
-    'D3.js'
-  ],
-  getFullName: function() {
-    return `${this.firstName} ${this.lastName}`
-  }
-}
-person.nationality = 'Ethiopian'
-person.country = 'Finland'
-person.title = 'teacher'
-person.skills.push('Meteor')
-person.skills.push('SasS')
-person.isMarried = true
+      person.getPersonInfo = function () {
+        let skillsWithoutLastSkill = this.skills
+          .splice(0, this.skills.length - 1)
+          .join(", ");
+        let lastSkill = this.skills.splice(this.skills.length - 1)[0];
 
-person.getPersonInfo = function() {
-  let skillsWithoutLastSkill = this.skills
-    .splice(0, this.skills.length - 1)
-    .join(', ')
-  let lastSkill = this.skills.splice(this.skills.length - 1)[0]
-
-  let skills = `${skillsWithoutLastSkill}, and ${lastSkill}`
-  let fullName = this.getFullName()
-  let statement = `${fullName} is a ${this.title}.\nHe lives in ${this.country}.\nHe teaches ${skills}.`
-  return statement
-}
-console.log(person)
-console.log(person.getPersonInfo())
-  </script>
-</body>
+        let skills = `${skillsWithoutLastSkill}, and ${lastSkill}`;
+        let fullName = this.getFullName();
+        let statement = `${fullName} is a ${this.title}.\nHe lives in ${this.country}.\nHe teaches ${skills}.`;
+        return statement;
+      };
+      console.log(person);
+      console.log(person.getPersonInfo());
+    </script>
+  </body>
 </html>

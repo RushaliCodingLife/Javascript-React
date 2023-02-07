@@ -1,31 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //  we can split a string at different positions, and we can change to an array
 
-  <script>
+      const String = "Apple, Banana, Kiwi, Grapes";
+      const String_data = String.split("");
+      console.log(String_data);
 
-//  we can split a string at different positions, and we can change to an array
+      const companiesString =
+        "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon";
+      const companies = companiesString.split(",");
 
-const String = 'Apple, Banana, Kiwi, Grapes'
-const String_data = String.split("")
-console.log(String_data)
-
-
-const companiesString = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
-const companies = companiesString.split(',')
-
-console.log(companies) 
-
-
-
-
-  </script>
-  
-</body>
+      console.log(companies);
+    </script>
+  </body>
 </html>

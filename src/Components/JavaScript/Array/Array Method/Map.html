@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Iterate an array elements and modify the array elements.
+      // does not execute the function for empty elements.
+      //does not change the original array.
 
-// Iterate an array elements and modify the array elements.
-// does not execute the function for empty elements.
-//does not change the original array. 
+      const Array = [11, 12, 13, 14, 15];
+      const numbersSquare = Array.map((num) => num * num);
+      console.log(numbersSquare);
 
-const Array = [11,12,13,14,15]
-const numbersSquare = Array.map((num) => num * num)
-console.log(numbersSquare)
-
-const Data =['apple', 'kiwi', 'grapes' , 'banana']
-const Fruits = Data.map((value) => value.toUpperCase())
-console.log(Fruits)
-
-
-  </script>
-</body>
+      const Data = ["apple", "kiwi", "grapes", "banana"];
+      const Fruits = Data.map((value) => value.toUpperCase());
+      console.log(Fruits);
+    </script>
+  </body>
 </html>
