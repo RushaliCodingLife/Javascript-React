@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document Object Model</title>
+  </head>
+  <body>
+    <h1 class="title" id="first-title">First Title</h1>
+    <h1 class="title" id="second-title">Second Title</h1>
+    <h1 class="title" id="third-title">Third Title</h1>
+    <h1></h1>
+
+    <script>
+      //An attribute is added in the opening tag of HTML which gives additional information about the element.
+      const titles = document.querySelectorAll("h1");
+      titles[3].className = "title";
+      titles[3].id = "fourth-title";
+
+      console.log(titles);
+    </script>
+  </body>
+</html>
