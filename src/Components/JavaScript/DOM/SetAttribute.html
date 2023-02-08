@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document Object Model</title>
+  </head>
+  <body>
+    <h1 class="title" id="first-title">First Title</h1>
+    <h1 class="title" id="second-title">Second Title</h1>
+    <h1 class="title" id="third-title">Third Title</h1>
+    <h1></h1>
+
+    <script>
+      // setAttribute  two parameters the type of the attribute and the name of the attribute
+      const titles = document.querySelectorAll("h1");
+      titles[3].setAttribute("class", "title");
+      titles[3].setAttribute("id", "fourth-title");
+
+      //another way to setting an attribute: append the class, doesn't over ride
+      //The class list method is a good method to append additional class.
+      // It does not override the original class if a class exists rather it adds additional class for the element.
+      titles[3].classList.add("title", "header-title");
+
+      // remove class
+      //We can remove a specific class from an element.
+      //another way to setting an attribute: append the class, doesn't over ride
+      titles[3].classList.remove("title", "header-title");
+
+      //The textContent property is used to add text to an HTML element.
+      titles[3].textContent = "Fourth Title";
+
+      //Adding Style Color
+      titles.forEach((title, i) => {
+        title.style.fontSize = "24px"; // all titles will have 24px font size
+        if (i % 2 === 0) {
+          title.style.color = "black";
+        } else {
+          title.style.color = "yellow";
+        }
+      });
+
+      //Adding Style Background Color
+
+      titles.forEach((title, i) => {
+        title.style.fontSize = "24px"; // all titles will have 24px font size
+        if (i % 2 === 0) {
+          title.style.backgroundColor = "green";
+        } else {
+          title.style.backgroundColor = "red";
+        }
+      });
+
+      //Adding Style Font Size
+
+      titles.forEach((title, i) => {
+        title.style.fontSize = "24px"; // all titles will have 24px font size
+        if (i % 2 === 0) {
+          title.style.fontSize = "20px";
+        } else {
+          title.style.fontSize = "30px";
+        }
+      });
+      console.log(titles);
+    </script>
+  </body>
+</html>

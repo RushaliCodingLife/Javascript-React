@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Finding HTML Elements by Query Selector</p>
+    <p class="intro">Hello World!.</p>
+    <p class="intro">
+      This example demonstrates the <b>querySelectorAll</b> method.
+    </p>
+    <p id="demo">Monday</p>
+
+    <script>
+      //  can be used to select HTML element by its tag name, id or class. If the tag name is used it selects only the first element
+      const x = document.querySelectorAll("p.intro");
+      document.getElementById("demo").innerHTML = "Paragraph" + x[0].innerHTML;
+    </script>
+  </body>
+</html>
