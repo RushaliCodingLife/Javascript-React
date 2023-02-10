@@ -7,14 +7,20 @@
     <title>Document</title>
   </head>
   <body>
+    <p id="demo"></p>
+
     <script>
-      let text = "";
-      for (let i = 0; i < 10; i++) {
-        if (i === 3) {
-          continue;
-        }
-        text += "The number is " + i + "<br>";
+      function myDisplayer(some) {
+        document.getElementById("demo").innerHTML = some;
       }
+
+      async function myFunction() {
+        return "Hello";
+      }
+
+      myFunction().then(function (value) {
+        myDisplayer(value);
+      });
     </script>
   </body>
 </html>

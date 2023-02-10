@@ -426,16 +426,12 @@ h1.main, p.demos {
 }
 
 
-/* Hire Me Button */
-.hire-Btn{
-  margin-top: 450px;
-  margin-bottom: -403px;
-  background-color: #013f3f;
+.nav-link {
+  color: whitesmoke;
+  font-weight: 800;
+  font-size: 25px;
 }
 
-.hire-Btn:hover{
-  background-color: black;
-}
-.hire-Btn:focus{
-  background-color: red;
+.nav-link:hover{
+  color: #3f1616;
 }
