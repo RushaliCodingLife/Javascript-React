@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // use for creating HTML elements
+      let title = document.createElement("h1");
+      title.className = "title";
+      title.style.fontSize = "24px";
+      title.textContent = "Creating HTML element DOM Day 2";
+      console.log(title);
+
+      // Using loop we can create as many HTML elements as we want.
+      // After we create the element we can assign value to the different properties of the HTML object.
+
+      for (let i = 0; i < 3; i++) {
+        title = document.createElement("h1");
+        title.className = "title";
+        title.style.fontSize = "24px";
+        title.textContent = i;
+        console.log(title);
+      }
+    </script>
+  </body>
+</html>

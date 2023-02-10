@@ -7,7 +7,7 @@
     <h1 class="title" id="first-title">First Title</h1>
     <h1 class="title" id="second-title">Second Title</h1>
     <h1 class="title" id="third-title">Third Title</h1>
-    <h1></h1>
+    <h1>Test</h1>
 
     <script>
       // setAttribute  two parameters the type of the attribute and the name of the attribute
@@ -40,9 +40,9 @@
 
       //Adding Style Background Color
 
-      titles.forEach((title, i) => {
+      titles.forEach((title, a) => {
         title.style.fontSize = "24px"; // all titles will have 24px font size
-        if (i % 2 === 0) {
+        if (a % 2 === 0) {
           title.style.backgroundColor = "green";
         } else {
           title.style.backgroundColor = "red";
